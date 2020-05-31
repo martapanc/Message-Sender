@@ -3,4 +3,6 @@
     <string name="send_message">Send message</string>
     <string name="title_activity_receive_message">Receive message</string>
     <string name="hello_world">Hello world!</string>
+    <string name="send_message_externally">Send message externally</string>
+    <string name="send_message_externally_prevent_default">Send Externally (prevent default)</string>
 </resources>

@@ -19,14 +19,37 @@
         android:layout_marginStart="36dp"
         android:layout_marginTop="21dp"
         android:onClick="onSendMessage"
-        android:text="@string/send_message" />
+        android:text="@string/send_message"
+        android:textColor="@color/colorAccent" />
+
+    <Button
+        android:id="@+id/send_externally"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/send"
+        android:layout_alignStart="@id/send"
+        android:layout_marginTop="16dp"
+        android:onClick="onSendMessageExternally"
+        android:text="@string/send_message_externally"
+        android:textColor="@color/colorPrimary" />
+
+    <Button
+        android:id="@+id/send_externally_prevent_default"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/send_externally"
+        android:layout_alignStart="@id/send_externally"
+        android:layout_marginTop="16dp"
+        android:onClick="onSendMessageExternallyPreventDefault"
+        android:text="@string/send_message_externally_prevent_default"
+        android:textColor="@color/colorPrimaryDark" />
 
     <EditText
         android:id="@+id/message"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/send"
-        android:layout_alignStart="@+id/send"
+        android:layout_below="@+id/send_externally_prevent_default"
+        android:layout_alignStart="@+id/send_externally_prevent_default"
         android:layout_marginTop="18dp"
         android:ems="10" />
 </RelativeLayout>

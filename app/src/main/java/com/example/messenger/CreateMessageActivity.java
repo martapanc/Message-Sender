@@ -24,4 +24,26 @@ public class CreateMessageActivity extends AppCompatActivity {
         intent.putExtra("number", 17);
         startActivity(intent);
     }
+
+    public void onSendMessageExternally(View view) {
+        EditText editText = findViewById(R.id.message);
+        String messageText = editText.getText().toString();
+
+        Intent intent = new Intent(Intent.ACTION_SEND);
+        intent.setType("text/plain");
+        intent.putExtra(Intent.EXTRA_TEXT, messageText);
+        intent.putExtra(Intent.EXTRA_SUBJECT, "Subject");
+        startActivity(intent);
+    }
+
+    public void onSendMessageExternallyPreventDefault(View view) {
+        EditText editText = findViewById(R.id.message);
+        String messageText = editText.getText().toString();
+
+        Intent intent = new Intent(Intent.ACTION_SEND);
+        intent.setType("text/plain");
+        intent.putExtra(Intent.EXTRA_TEXT, messageText);
+        Intent chosenIntent = Intent.createChooser(intent, "Send message...");
+        startActivity(chosenIntent);
+    }
 }
