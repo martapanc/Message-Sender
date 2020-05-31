@@ -5,8 +5,6 @@ Demonstrate use of explicit (choose an activity within the app to perform an act
 
 Also, an implicit activity can either let the user choose an app, or trigger a choice every time.
 
-Default choice:
-![default-choice](app/src/main/assets/photo_2020-05-31_18-36-59.jpg)
+Default choice vs Choose every time:
 
-Choose every time:
-![prevent-default-choice](app/src/main/assets/photo_2020-05-31_18-37-07.jpg)
+<img src="app/src/main/assets/photo_2020-05-31_18-36-59.jpg" width="30%"> <img src="app/src/main/assets/photo_2020-05-31_18-37-07.jpg" width="30%">
